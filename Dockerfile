@@ -1,6 +1,7 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+## Referense site URL: https://noitalog.tokyo/aspnet-core-6-0-react-js-docker/
 ## docker build -t my-new-app-image .
-## docker run -it --rm -p 5000:80 my-new-app-image
+## docker run -it --rm -d -p 5000:80 my-new-app-image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 5000
